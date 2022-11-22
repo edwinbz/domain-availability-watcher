@@ -5,6 +5,8 @@ const chrome = require('selenium-webdriver/chrome')
 const show_browser = false;
 
 let opts = new chrome.Options().headless()
+opts.addArguments('--disable-dev-shm-usage')
+
 
 
 const driver = new webdriver.Builder()
