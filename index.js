@@ -4,12 +4,8 @@ const chrome = require('selenium-webdriver/chrome')
 
 const show_browser = false;
 
-let opts
-if (show_browser) {
-    opts = new chrome.Options()
-} else {
-    opts = new chrome.Options().headless()
-}
+let opts = new chrome.Options().headless()
+
 
 const driver = new webdriver.Builder()
     .forBrowser('chrome')
